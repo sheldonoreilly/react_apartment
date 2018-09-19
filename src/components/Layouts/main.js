@@ -21,8 +21,15 @@ export default props => {
 				<Grid item xs={4}>
 					<Paper style={styles.leftpaper}>
 						<Typography variant="headline">List of Damages</Typography>
+
 						{props.roomDamages.map(damage => (
-							<ListItem button>
+							<ListItem
+								key={damage.id}
+								button
+								onClick={() => {
+									props.onSelectedDamage(damage);
+								}}
+							>
 								<ListItemText primary={damage.name} />
 							</ListItem>
 						))}
@@ -31,6 +38,9 @@ export default props => {
 				<Grid item xs={8}>
 					<Paper style={styles.leftpaper}>
 						<Typography variant="headline">Details</Typography>
+						<ListItem button>
+							<ListItemText primary={props.selectedDamage.description} />
+						</ListItem>
 					</Paper>
 				</Grid>
 			</Grid>
