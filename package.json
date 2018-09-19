@@ -1,0 +1,39 @@
+{
+	"name": "react_projectplanner",
+	"version": "1.0.0",
+	"description": "Using React and Material-ui to create a basic project planner.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"server": "live-server public/",
+		"dev-server": "webpack-dev-server --mode development",
+		"build": "webpack --mode production"
+	},
+	"keywords": [
+		"React",
+		"Material-ui"
+	],
+	"author": "Sheldon O'Reilly",
+	"license": "ISC",
+	"dependencies": {
+		"@material-ui/core": "^3.1.0",
+		"@material-ui/icons": "^3.0.1",
+		"babel-cli": "6.24.1",
+		"babel-core": "6.25.0",
+		"babel-loader": "7.1.1",
+		"babel-plugin-transform-class-properties": "6.24.1",
+		"babel-plugin-transform-object-rest-spread": "6.23.0",
+		"babel-polyfill": "^6.26.0",
+		"babel-preset-env": "1.5.2",
+		"babel-preset-react": "6.24.1",
+		"cross-env": "^5.0.5",
+		"react": "^16.5.1",
+		"react-dom": "^16.5.1",
+		"webpack": "^4.19.1",
+		"webpack-cli": "^3.1.0",
+		"webpack-dev-server": "^3.1.8"
+	},
+	"devDependencies": {
+		"live-server": "^1.2.0"
+	}
+}
