@@ -35,7 +35,7 @@ export default class App extends Component {
 	render() {
 		return (
 			<div>
-				<Header />
+				<Header rooms={rooms} />
 				<TabSelector rooms={rooms} roomChange={this.handleSelRoomChange} />
 				<Main
 					roomDamages={this.state.roomDamages}
